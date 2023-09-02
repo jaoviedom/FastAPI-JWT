@@ -48,9 +48,7 @@ def get_password_hash(password):
 
 def get_user(username: str):
     user = collection_user.find_one({"username": username})
-    print("user:", user)
-    print("username:", user['username'])
-    if user['username'] == username:
+    if user:
         return UserInDB(**user)
 
 def authenticate_user(username: str, password: str):
