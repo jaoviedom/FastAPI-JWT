@@ -3,8 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from routes import router
 
-# from database import db
-
 app = FastAPI()
 
 # pwd = get_password_hash("test1234")
